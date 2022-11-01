@@ -37,4 +37,52 @@ class NPuzzle:
           inversion_cnt += 1
     return inversion_cnt
 
+  def move_up(self):
+    idx = self.puzzle.index(0)
+    if idx < self.n:
+      print(f"{idx} < {self.n}")
+      return False
+    change_elemnt = self.puzzle[idx]
+    self.puzzle[idx] = self.puzzle[idx-self.n]
+    self.puzzle[idx-self.n] = change_elemnt
+    return True
 
+  def move_down(self):
+    idx = self.puzzle.index(0)
+    if idx >= (self.N-self.n):
+      print(f"{idx} >= {self.N-self.n}")
+      return False
+    
+    change_elemnt = self.puzzle[idx]
+    self.puzzle[idx] = self.puzzle[idx+self.n]
+    self.puzzle[idx+self.n] = change_elemnt
+    return True
+
+  def move_right(self):
+    idx = self.puzzle.index(0)
+    if idx%self.n == (self.n-1):
+      print(f"{idx%self.n} == {self.n-1}")
+      return False
+      
+    change_elemnt = self.puzzle[idx]
+    self.puzzle[idx] = self.puzzle[idx+1]
+    self.puzzle[idx+1] = change_elemnt
+    return True
+
+  def move_left(self):
+    idx = self.puzzle.index(0)
+    if idx%self.n == 0:
+      print(f"{idx%self.n} == {0}")
+      return False
+      
+    change_elemnt = self.puzzle[idx]
+    self.puzzle[idx] = self.puzzle[idx-1]
+    self.puzzle[idx-1] = change_elemnt
+    return True
+
+  def display(self):
+    for i in range(self.n):
+      for j in range(self.n):
+        print(f"{self.puzzle[i*self.n+j]:<3}", end="")
+      print()
+    print()
