@@ -26,7 +26,6 @@ class MainWindow(QMainWindow):
     self.goal = self.NP.getGoal()
     self.puzzle = self.goal
     self.lastPeace = self.puzzle_9.styleSheet()
-    self.puzzle_9.setStyleSheet("")
 
     self.Btns = [self.puzzle_1, self.puzzle_2, self.puzzle_3, self.puzzle_4, self.puzzle_5, self.puzzle_6, self.puzzle_7, self.puzzle_8, self.puzzle_9]
     
@@ -39,14 +38,16 @@ class MainWindow(QMainWindow):
     temp = self.sender()
     target_num = int(temp.objectName()[-1])
 
-    if self.is_click_moved(target_num):
-      self.swapStyleSheet(target_num)
-      self.swapZero(target_num)
+    if not self.initial:
+      if self.is_click_moved(target_num):
+        self.swapStyleSheet(target_num)
+        self.swapZero(target_num)
 
-    self.puzzle = self.NP.getPuzzle()
-    
-    if self.clear():
-      self.puzzle_9.setStyleSheet(self.lastPeace)
+      self.puzzle = self.NP.getPuzzle()
+      
+      if self.clear():
+        self.puzzle_9.setStyleSheet(self.lastPeace)
+        self.initial = True
 
   
   def is_click_moved(self, target_num):
