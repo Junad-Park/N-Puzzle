@@ -5,7 +5,7 @@ class NPuzzle:
     self.N = N
     self.n = int(math.sqrt(N))
     self.goal = [ _ for _ in range(1, N)] + [0]
-    self.puzzle = []
+    self.puzzle = self.goal
   
   def shuffle_puzzle(self):
     temp_puzzle = self.goal.copy()
@@ -18,7 +18,10 @@ class NPuzzle:
       row_from_bottom = self.n - (temp_puzzle.index(0)//self.n)
       if self.is_solved(row_from_bottom, temp_puzzle):
         break
-    self.puzzle = temp_puzzle
+    self.puzzle = [1,2,3,4,5,6,7,0,8]
+    #temp_puzzle
+    #[1,2,3,4,5,6,7,0,8]
+    return self.puzzle
   
   def is_solved(self, row, puzzle):
     if (self.n%2 == 1):
@@ -86,3 +89,10 @@ class NPuzzle:
         print(f"{self.puzzle[i*self.n+j]:<3}", end="")
       print()
     print()
+
+  def getPuzzle(self):
+    return self.puzzle
+
+  def getGoal(self):
+    return self.goal
+

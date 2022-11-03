@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>882</width>
+    <height>777</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color : rgb(250, 214, 165)
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="suffleBtn">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>660</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color : rgb(97, 118, 75);
+font: 700 14pt &quot;Nanum Gothic&quot;;
+color : rgb(250, 214, 165);
+font-size : 16px;
+</string>
+    </property>
+    <property name="text">
+     <string>Suffle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AiBtn">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>660</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color : rgb(97, 118, 75);
+font: 700 14pt &quot;Nanum Gothic&quot;;
+color : rgb(250, 214, 165);
+font-size : 16px;
+</string>
+    </property>
+    <property name="text">
+     <string>AI</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>701</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color : rgb(155, 161, 123);
+border-radius : 5px;
+</string>
+    </property>
+    <widget class="QLabel" name="base">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>661</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>661</width>
+       <height>481</height>
+      </size>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(/Users/parkjunha/Desktop/Project/N-Puzzle/image/corgi.jpg);
+border-radius : 10px; 
+opacity : 0.2;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/cropImg/cropImg/corgi.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>661</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>661</width>
+       <height>481</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : rgba(255, 255, 255, 100);</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="2">
+       <widget class="QPushButton" name="puzzle_9">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_2_2.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="puzzle_8">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_2_1.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="puzzle_7">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_2_0.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="puzzle_6">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_1_2.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="puzzle_5">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_1_1.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="puzzle_4">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_1_0.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="puzzle_3">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_0_2.jpg);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="puzzle_2">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_0_1.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="puzzle_1">
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_0_0.jpg);
+border-top-left-radius: 22px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Pgbar">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>590</y>
+      <width>691</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color : rgb(128, 128, 128);
+border: 1px solid black;
+border-radius: 40px;</string>
+    </property>
+    <property name="text">
+     <string>                                                                                            Pgbar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>882</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMode">
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <addaction name="action8_Puzzle"/>
+    <addaction name="action16_Puzzle"/>
+    <addaction name="action24_Puzzle"/>
+   </widget>
+   <widget class="QMenu" name="menuPhoto">
+    <property name="title">
+     <string>Photo</string>
+    </property>
+    <addaction name="actionCorgi"/>
+    <addaction name="actionCat"/>
+    <addaction name="actionMan"/>
+   </widget>
+   <addaction name="menuMode"/>
+   <addaction name="menuPhoto"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action8_Puzzle">
+   <property name="text">
+    <string>8-Puzzle</string>
+   </property>
+  </action>
+  <action name="action16_Puzzle">
+   <property name="text">
+    <string>16-Puzzle</string>
+   </property>
+  </action>
+  <action name="action24_Puzzle">
+   <property name="text">
+    <string>24-Puzzle</string>
+   </property>
+  </action>
+  <action name="actionCorgi">
+   <property name="text">
+    <string>Corgi</string>
+   </property>
+  </action>
+  <action name="actionCat">
+   <property name="text">
+    <string>Cat</string>
+   </property>
+  </action>
+  <action name="actionMan">
+   <property name="text">
+    <string>Man</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>puzzle_1</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>172</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_4</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>167</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>30</x>
+     <y>321</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_7</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>487</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>16</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_2</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_3</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>681</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>675</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_6</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>662</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>838</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_9</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>669</x>
+     <y>493</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>843</x>
+     <y>508</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_5</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>452</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>600</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_8</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>600</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>suffleBtn</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>shuffle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>704</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>94</x>
+     <y>702</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>movePuzzle()</slot>
+  <slot>slot2()</slot>
+  <slot>shuffle()</slot>
+  <slot>slot3()</slot>
+ </slots>
+</ui>
