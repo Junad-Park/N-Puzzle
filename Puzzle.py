@@ -18,8 +18,8 @@ class NPuzzle:
       row_from_bottom = self.n - (temp_puzzle.index(0)//self.n)
       if self.is_solved(row_from_bottom, temp_puzzle):
         break
-    self.puzzle = [1,2,3,4,5,6,7,0,8]
-    #temp_puzzle
+    self.puzzle = temp_puzzle
+    #temp
     #[1,2,3,4,5,6,7,0,8]
     return self.puzzle
   

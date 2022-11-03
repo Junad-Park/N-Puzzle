@@ -100,7 +100,7 @@ border-radius : 5px;
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-image: url(/Users/parkjunha/Desktop/Project/N-Puzzle/image/corgi.jpg);
+      <string notr="true">border-image: url(/Users/parkjunha/Desktop/Project/N-Puzzle/images/corgi.jpg);
 border-radius : 10px; 
 opacity : 0.2;
 </string>
@@ -152,7 +152,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_2_2.jpg);</string>
+         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_2_2.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -171,7 +171,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_2_1.jpg);</string>
+         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_2_1.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -190,7 +190,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_2_0.jpg);</string>
+         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_2_0.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -209,7 +209,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_1_2.jpg);</string>
+         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_1_2.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -228,7 +228,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_1_1.jpg);</string>
+         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_1_1.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -247,7 +247,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_1_0.jpg);</string>
+         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_1_0.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -266,7 +266,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_0_2.jpg);
+         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_0_2.jpg);
 </string>
         </property>
         <property name="text">
@@ -286,7 +286,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_0_1.jpg);</string>
+         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_0_1.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -305,8 +305,8 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/corgi/corgi_0_0.jpg);
-border-top-left-radius: 22px;</string>
+         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_0_0.jpg);
+</string>
         </property>
         <property name="text">
          <string/>

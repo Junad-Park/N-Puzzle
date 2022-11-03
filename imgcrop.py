@@ -18,4 +18,4 @@ def imgcrop(input, save_path, xPieces, yPieces):
             except:
                 pass
 
-imgcrop("image/black_dog.jpg", 'image/cropImg/blackdog/' , 3, 3)
+imgcrop("images/black_dog.jpg", 'images/cropImg/blackdog/' , 3, 3)

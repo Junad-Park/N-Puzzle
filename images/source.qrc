@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/image">
+    <qresource prefix="/images">
         <file>cropImg/blackdog/black_dog_0_0.jpg</file>
         <file>cropImg/blackdog/black_dog_0_1.jpg</file>
         <file>cropImg/blackdog/black_dog_0_2.jpg</file>
