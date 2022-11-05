@@ -45,7 +45,7 @@ class NPuzzle:
         Returns:
             list[int]: solvable puzzle
         """
-        if (self.n%2 == 1):
+        if (self.__n%2 == 1):
             return self.getInversionCnt(random_puzzle) % 2 == 0
         else:
             if (row % 2 == 0):
@@ -79,12 +79,12 @@ class NPuzzle:
             bool: Can move up
         """
         zero_idx = self.__puzzle.index(0)
-        if zero_idx < self.n:
-            print(f"{zero_idx} < {self.n}")
+        if zero_idx < self.__n:
+            print(f"{zero_idx} < {self.__n}")
             return False
         change_elemnt = self.__puzzle[zero_idx]
-        self.__puzzle[zero_idx] = self.__puzzle[zero_idx-self.n]
-        self.__puzzle[zero_idx-self.n] = change_elemnt
+        self.__puzzle[zero_idx] = self.__puzzle[zero_idx-self.__n]
+        self.__puzzle[zero_idx-self.__n] = change_elemnt
         return True
 
     def moveDown(self) -> bool:
@@ -94,13 +94,13 @@ class NPuzzle:
             bool: Can move down
         """
         zero_idx = self.__puzzle.index(0)
-        if zero_idx >= (self.N-self.n):
-            print(f"{zero_idx} >= {self.N-self.n}")
+        if zero_idx >= (self.__N-self.__n):
+            print(f"{zero_idx} >= {self.__N-self._n}")
             return False
     
         change_elemnt = self.__puzzle[zero_idx]
-        self.__puzzle[zero_idx] = self.__puzzle[zero_idx+self.n]
-        self.__puzzle[zero_idx+self.n] = change_elemnt
+        self.__puzzle[zero_idx] = self.__puzzle[zero_idx+self.__n]
+        self.__puzzle[zero_idx+self.__n] = change_elemnt
         return True
 
     def moveRight(self) -> bool:
@@ -110,8 +110,8 @@ class NPuzzle:
             bool: Can move right
         """
         zero_idx = self.__puzzle.index(0)
-        if zero_idx%self.n == (self.n-1):
-            print(f"{zero_idx%self.n} == {self.n-1}")
+        if zero_idx%self.__n == (self.__n-1):
+            print(f"{zero_idx%self.__n} == {self.__n-1}")
             return False
       
         change_elemnt = self.__puzzle[zero_idx]
@@ -126,8 +126,8 @@ class NPuzzle:
             bool: Can move left
         """
         zero_idx = self.__puzzle.index(0)
-        if zero_idx%self.n == 0:
-            print(f"{zero_idx%self.n} == {0}")
+        if zero_idx%self.__n == 0:
+            print(f"{zero_idx%self.__n} == {0}")
             return False
       
         change_elemnt = self.__puzzle[zero_idx]
@@ -141,9 +141,9 @@ class NPuzzle:
         Returns:
             None
         """
-        for i in range(self.n):
-            for j in range(self.n):
-                print(f"{self.__puzzle[i*self.n+j]:<3}", end="")
+        for i in range(self.__n):
+            for j in range(self.__n):
+                print(f"{self.__puzzle[i*self.__n+j]:<3}", end="")
             print()
         print()
 
