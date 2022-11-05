@@ -16,6 +16,8 @@ import package.ui.resource_rc as resource_rc
 
 
 class MainWindow(QMainWindow):
+
+
     def __init__(self, parent=None):
         super().__init__(parent)
         uic.loadUi("../designer/form.ui", self)
@@ -31,8 +33,8 @@ class MainWindow(QMainWindow):
             self.puzzle_4, self.puzzle_5, self.puzzle_6, 
             self.puzzle_7, self.puzzle_8, self.puzzle_9
             ]
+            
         self.inital_styles = [item.styleSheet() for item in self.Btns]
-
         self.lastPeace = self.puzzle_9.styleSheet()
 
         self.running = False
@@ -67,12 +69,11 @@ class MainWindow(QMainWindow):
         
         zero_idx = self.puzzle.index(0)
         target_idx = self.puzzle.index(self.puzzle[target_num-1])
-        n = self.nPzl.n
+        n = self.nPzl.getn()
 
         return (abs(zero_idx - target_idx) == n or 
         target_idx//n == zero_idx//n and abs(zero_idx - target_idx) == 1)
       
-
     def swapStyleSheet(self, target_num) -> None:
         """ Move the tile you received with the sender
         
@@ -138,8 +139,6 @@ class MainWindow(QMainWindow):
 
         self.Btns[self.puzzle.index(0)].setStyleSheet("")
         
-    
-
     def clear(self) -> bool:
         """ Returns whether the game is cleared or not 
         
@@ -148,8 +147,6 @@ class MainWindow(QMainWindow):
         """
     
         return self.running == True and self.goal == self.puzzle
-
-
 
 if __name__ == "__main__":
   app = QApplication(sys.argv)

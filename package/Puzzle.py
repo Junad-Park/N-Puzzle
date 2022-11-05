@@ -2,12 +2,12 @@ import random, math
 
 class NPuzzle:
     
-    def __init__(self, N):
 
-        self.N = N
-        self.n = int(math.sqrt(N))
-        self.goal = [ _ for _ in range(1, N)] + [0]
-        self.puzzle = self.goal
+    def __init__(self, N):
+        self.__N = N
+        self.__n = int(math.sqrt(N))
+        self.__goal = [ _ for _ in range(1, N)] + [0]
+        self.__puzzle = self.__goal
     
     def getRandomPuzzle(self) -> list[int]:
         """ Get random puzzle based on self.goal
@@ -15,7 +15,7 @@ class NPuzzle:
         Returns:
             list[int]: The shuffle of the self.goal.copy
         """
-        temp_puzzle = self.goal.copy()
+        temp_puzzle = self.__goal.copy()
         random.shuffle(temp_puzzle)
         return temp_puzzle
 
@@ -27,13 +27,13 @@ class NPuzzle:
         """
         while True:
             random_puzzle = self.getRandomPuzzle()
-            row_from_bottom = self.n - (random_puzzle.index(0)//self.n)
+            row_from_bottom = self.__n - (random_puzzle.index(0)//self.__n)
             if self.isSolved(row_from_bottom, random_puzzle):
                 break
-        self.puzzle = random_puzzle
+        self.__puzzle = random_puzzle
         #temp_puzzle
         #[1,2,3,4,5,6,7,0,8]
-        return self.puzzle
+        return self.__puzzle
   
     def isSolved(self, row, random_puzzle) -> bool:
         """ Decide it can be solved
@@ -65,7 +65,10 @@ class NPuzzle:
         inversion_cnt = 0
         for i in range(len(random_puzzle)):
             for j in range(i, len(random_puzzle)):
-                if (random_puzzle[i]!=0 and random_puzzle[j] !=0 and random_puzzle[i] > random_puzzle[j]):
+                if (random_puzzle[i]!=0 and 
+                    random_puzzle[j] != 0 and 
+                    random_puzzle[i] > random_puzzle[j]
+                    ):
                     inversion_cnt += 1
         return inversion_cnt
 
@@ -75,13 +78,13 @@ class NPuzzle:
         Returns:
             bool: Can move up
         """
-        zero_idx = self.puzzle.index(0)
+        zero_idx = self.__puzzle.index(0)
         if zero_idx < self.n:
             print(f"{zero_idx} < {self.n}")
             return False
-        change_elemnt = self.puzzle[zero_idx]
-        self.puzzle[zero_idx] = self.puzzle[zero_idx-self.n]
-        self.puzzle[zero_idx-self.n] = change_elemnt
+        change_elemnt = self.__puzzle[zero_idx]
+        self.__puzzle[zero_idx] = self.__puzzle[zero_idx-self.n]
+        self.__puzzle[zero_idx-self.n] = change_elemnt
         return True
 
     def moveDown(self) -> bool:
@@ -90,14 +93,14 @@ class NPuzzle:
         Returns:
             bool: Can move down
         """
-        zero_idx = self.puzzle.index(0)
+        zero_idx = self.__puzzle.index(0)
         if zero_idx >= (self.N-self.n):
             print(f"{zero_idx} >= {self.N-self.n}")
             return False
     
-        change_elemnt = self.puzzle[zero_idx]
-        self.puzzle[zero_idx] = self.puzzle[zero_idx+self.n]
-        self.puzzle[zero_idx+self.n] = change_elemnt
+        change_elemnt = self.__puzzle[zero_idx]
+        self.__puzzle[zero_idx] = self.__puzzle[zero_idx+self.n]
+        self.__puzzle[zero_idx+self.n] = change_elemnt
         return True
 
     def moveRight(self) -> bool:
@@ -106,14 +109,14 @@ class NPuzzle:
         Returns:
             bool: Can move right
         """
-        zero_idx = self.puzzle.index(0)
+        zero_idx = self.__puzzle.index(0)
         if zero_idx%self.n == (self.n-1):
             print(f"{zero_idx%self.n} == {self.n-1}")
             return False
       
-        change_elemnt = self.puzzle[zero_idx]
-        self.puzzle[zero_idx] = self.puzzle[zero_idx+1]
-        self.puzzle[zero_idx+1] = change_elemnt
+        change_elemnt = self.__puzzle[zero_idx]
+        self.__puzzle[zero_idx] = self.__puzzle[zero_idx+1]
+        self.__puzzle[zero_idx+1] = change_elemnt
         return True
 
     def moveLeft(self) -> bool:
@@ -122,14 +125,14 @@ class NPuzzle:
         Returns:
             bool: Can move left
         """
-        zero_idx = self.puzzle.index(0)
+        zero_idx = self.__puzzle.index(0)
         if zero_idx%self.n == 0:
             print(f"{zero_idx%self.n} == {0}")
             return False
       
-        change_elemnt = self.puzzle[zero_idx]
-        self.puzzle[zero_idx] = self.puzzle[zero_idx-1]
-        self.puzzle[zero_idx-1] = change_elemnt
+        change_elemnt = self.__puzzle[zero_idx]
+        self.__puzzle[zero_idx] = self.__puzzle[zero_idx-1]
+        self.__puzzle[zero_idx-1] = change_elemnt
         return True
 
     def display(self) -> None:
@@ -140,15 +143,16 @@ class NPuzzle:
         """
         for i in range(self.n):
             for j in range(self.n):
-                print(f"{self.puzzle[i*self.n+j]:<3}", end="")
+                print(f"{self.__puzzle[i*self.n+j]:<3}", end="")
             print()
         print()
 
     def getPuzzle(self) -> list[int]:
-        """ Return self.puzzle """
-        return self.puzzle
+        """ Return self.__puzzle """
+        return self.__puzzle
 
     def getGoal(self) -> list[int]:
         """ Return self.goal """
-        return self.goal
-
+        return self.__goal
+    def getn(self) -> int:
+        return self.__n
