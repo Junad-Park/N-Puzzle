@@ -7,7 +7,7 @@ from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 from PyQt6.QtCore import *
 from PyQt6 import uic
-import resource_rc
+import ui.resource_rc as resource_rc
 
 # Important:
 # You need to run the following command to generate the ui_form.py file
@@ -18,7 +18,7 @@ import resource_rc
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
-        uic.loadUi("form.ui", self)
+        uic.loadUi("../designer/form.ui", self)
         self.setWindowTitle("N-Puzzle")
         self.setFixedSize(880, 760)
 
@@ -155,5 +155,4 @@ if __name__ == "__main__":
   app = QApplication(sys.argv)
   widget = MainWindow()
   widget.show()
-  help(widget.nPzl)
   sys.exit(app.exec())
