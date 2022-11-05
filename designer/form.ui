@@ -764,7 +764,6 @@ opacity : 0.2;
     </property>
     <addaction name="action_8"/>
     <addaction name="action_15"/>
-    <addaction name="action_24"/>
    </widget>
    <widget class="QMenu" name="menuPhoto">
     <property name="title">
