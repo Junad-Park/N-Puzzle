@@ -6,7 +6,7 @@ from package.Puzzle import NPuzzle
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 from PyQt6.QtCore import *
-from PyQt6 import uic
+from PyQt6 import uic, QtWidgets
 import package.ui.resource_rc as resource_rc
 
 # Important:
@@ -15,7 +15,7 @@ import package.ui.resource_rc as resource_rc
 #     pyside2-uic form.ui -o ui_form.py
 
 
-class MainWindow(QMainWindow):
+class MainWindow(QtWidgets.QMainWindow):
 
 
     def __init__(self, parent=None):
@@ -24,19 +24,27 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("N-Puzzle")
         self.setFixedSize(880, 760)
 
+        self.stackedWidget:QStackedWidget
+
         self.nPzl= NPuzzle(9)
         self.goal = self.nPzl.getGoal()
         self.puzzle = self.nPzl.getPuzzle()
 
-        self.Btns = [
-            self.puzzle_1, self.puzzle_2, self.puzzle_3, 
-            self.puzzle_4, self.puzzle_5, self.puzzle_6, 
-            self.puzzle_7, self.puzzle_8, self.puzzle_9
-            ]
+        self.Btns = [self.__dict__[f"puzzle_{i+1}"] 
+                    for i in range(self.nPzl.getN())] 
 
-        self.inital_styles = [item.styleSheet() for item in self.Btns]
+        self._8_initial_styles = [self.__dict__[f"puzzle_{i+1}"].styleSheet() 
+                    for i in range(9)]
+
+        self._15_initial_styles = [self.__dict__[f"puzzle_{i+1}"].styleSheet() 
+                    for i in range(9, 25)]
+
+        
+        self.styles = self._8_initial_styles
+    
         self.lastPeace = self.Btns[-1].styleSheet()
-
+        
+        self.mode = self.nPzl.getN()
         self.running = False
 
     def movePuzzle(self) -> None:
@@ -47,12 +55,14 @@ class MainWindow(QMainWindow):
         """
         target = self.sender()
         target_num = int(target.objectName().split('_')[1])
+        
+        if self.mode == 16:
+            target_num -=9
 
         if self.running:
             if self.isClickMoved(target_num):
                 self.swapStyleSheet(target_num)
                 self.swapZero(target_num)
-
             self.updatePuzzle()
         
         if self.clear():
@@ -131,13 +141,16 @@ class MainWindow(QMainWindow):
         """
         self.running = True
         self.puzzle = self.nPzl.createSolvablePuzzle()
-        
+
+
+
         for i in range(len(self.Btns)):
             self.Btns[i].setStyleSheet(
-                self.inital_styles[self.goal.index(self.puzzle[i])]
+                self.styles[self.goal.index(self.puzzle[i])]
                 )
 
         self.Btns[self.puzzle.index(0)].setStyleSheet("")
+        
         
     def clear(self) -> bool:
         """ Returns whether the game is cleared or not 
@@ -148,8 +161,44 @@ class MainWindow(QMainWindow):
     
         return self.running == True and self.goal == self.puzzle
 
+    def changeMode(self):
+        target = self.sender()
+        
+        N = int(target.objectName().split('_')[1])+1
+        
+        self.nPzl.updatePuzzle(N)
+        self.goal = self.nPzl.getGoal()
+        self.mode = self.nPzl.getN()
+        self.puzzle = self.nPzl.getPuzzle()
+
+        self.Btns = []
+
+        if N == 9:
+            self.stackedWidget.setCurrentWidget(self.page)
+            self.styles = self._8_initial_styles
+            for i in range(self.mode):
+                self.Btns.append(self.__dict__[f"puzzle_{i+1}"])
+
+        elif N == 16:
+            self.stackedWidget.setCurrentWidget(self.page_2)
+            self.styles = self._15_initial_styles
+
+            for i in range(self.mode):
+                self.Btns.append(self.__dict__[f"puzzle_{i+1+9}"])
+        
+            
+        self.lastPeace = self.Btns[-1].styleSheet()
+
+        for i in range(len(self.Btns)):
+            self.Btns[i].setStyleSheet(self.styles[i])
+        self.running = False
+
+
 if __name__ == "__main__":
-  app = QApplication(sys.argv)
-  widget = MainWindow()
-  widget.show()
-  sys.exit(app.exec())
+    app = QApplication(sys.argv)
+    mainWindow = MainWindow()
+
+
+    mainWindow.show()
+
+    app.exec()

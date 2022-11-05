@@ -58,271 +58,6 @@ font-size : 16px;
      <string>AI</string>
     </property>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>40</y>
-      <width>701</width>
-      <height>521</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color : rgb(155, 161, 123);
-border-radius : 5px;
-</string>
-    </property>
-    <widget class="QLabel" name="base">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>661</width>
-       <height>481</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>661</width>
-       <height>481</height>
-      </size>
-     </property>
-     <property name="mouseTracking">
-      <bool>false</bool>
-     </property>
-     <property name="tabletTracking">
-      <bool>false</bool>
-     </property>
-     <property name="acceptDrops">
-      <bool>false</bool>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-image: url(/Users/parkjunha/Desktop/Project/N-Puzzle/images/corgi.jpg);
-border-radius : 10px; 
-opacity : 0.2;
-</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>:/cropImg/cropImg/corgi.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="wordWrap">
-      <bool>false</bool>
-     </property>
-     <property name="openExternalLinks">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QWidget" name="widget_2" native="true">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>661</width>
-       <height>481</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>661</width>
-       <height>481</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color : rgba(255, 255, 255, 100);</string>
-     </property>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="2">
-       <widget class="QPushButton" name="puzzle_9">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_2_2.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="puzzle_8">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_2_1.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QPushButton" name="puzzle_7">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_2_0.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QPushButton" name="puzzle_6">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_1_2.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QPushButton" name="puzzle_5">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_1_1.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="puzzle_4">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_1_0.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2">
-       <widget class="QPushButton" name="puzzle_3">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_0_2.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QPushButton" name="puzzle_2">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_0_1.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QPushButton" name="puzzle_1">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_0_0.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </widget>
    <widget class="QLabel" name="Pgbar">
     <property name="geometry">
      <rect>
@@ -341,6 +76,678 @@ border-radius: 40px;</string>
      <string>                                                                                            Pgbar</string>
     </property>
    </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>700</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>701</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : rgb(155, 161, 123);
+border-radius : 5px;
+</string>
+      </property>
+      <widget class="QLabel" name="base">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>661</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>661</width>
+         <height>481</height>
+        </size>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(/Users/parkjunha/Desktop/Project/N-Puzzle/images/corgi.jpg);
+border-radius : 10px; 
+opacity : 0.2;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>:/cropImg/cropImg/corgi.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="openExternalLinks">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>661</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>661</width>
+         <height>481</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : rgba(255, 255, 255, 100);</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="2">
+         <widget class="QPushButton" name="puzzle_9">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_2_2.jpg);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="puzzle_8">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_2_1.jpg);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="puzzle_7">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_2_0.jpg);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="puzzle_6">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_1_2.jpg);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="puzzle_5">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_1_1.jpg);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="puzzle_4">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_1_0.jpg);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="puzzle_3">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_0_2.jpg);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="puzzle_2">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_0_1.jpg);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="puzzle_1">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_0_0.jpg);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>701</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : rgb(155, 161, 123);
+border-radius : 5px;
+</string>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>661</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>661</width>
+         <height>481</height>
+        </size>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(/Users/parkjunha/Desktop/Project/N-Puzzle/images/corgi.jpg);
+
+border-radius : 10px; 
+opacity : 0.2;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>:/cropImg/cropImg/corgi.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+       <property name="openExternalLinks">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_4" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>661</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>661</width>
+         <height>481</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : rgba(255, 255, 255, 100);</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="2" column="5">
+         <widget class="QPushButton" name="puzzle_13">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_0_3.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="puzzle_11">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_0_1.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QPushButton" name="puzzle_19">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_2_1.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QPushButton" name="puzzle_15">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_1_1.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="puzzle_18">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_2_0.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QPushButton" name="puzzle_23">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_3_1.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QPushButton" name="puzzle_22">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_3_0.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="puzzle_12">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_0_2.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="puzzle_14">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_1_0.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="5">
+         <widget class="QPushButton" name="puzzle_21">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_2_3.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QPushButton" name="puzzle_17">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_1_3.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="4">
+         <widget class="QPushButton" name="puzzle_24">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_3_2.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="5">
+         <widget class="QPushButton" name="puzzle_25">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_3_3.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QPushButton" name="puzzle_20">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_2_2.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="puzzle_10">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_0_0.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QPushButton" name="puzzle_16">
+          <property name="minimumSize">
+           <size>
+            <width>163</width>
+            <height>118</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_1_2.jpg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -355,9 +762,9 @@ border-radius: 40px;</string>
     <property name="title">
      <string>Mode</string>
     </property>
-    <addaction name="action8_Puzzle"/>
-    <addaction name="action16_Puzzle"/>
-    <addaction name="action24_Puzzle"/>
+    <addaction name="action_8"/>
+    <addaction name="action_15"/>
+    <addaction name="action_24"/>
    </widget>
    <widget class="QMenu" name="menuPhoto">
     <property name="title">
@@ -371,17 +778,17 @@ border-radius: 40px;</string>
    <addaction name="menuPhoto"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="action8_Puzzle">
+  <action name="action_8">
    <property name="text">
     <string>8-Puzzle</string>
    </property>
   </action>
-  <action name="action16_Puzzle">
+  <action name="action_15">
    <property name="text">
     <string>16-Puzzle</string>
    </property>
   </action>
-  <action name="action24_Puzzle">
+  <action name="action_24">
    <property name="text">
     <string>24-Puzzle</string>
    </property>
@@ -564,10 +971,298 @@ border-radius: 40px;</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>action_8</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>changeMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_10</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_11</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>314</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_12</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>487</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>469</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_13</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>650</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_14</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_18</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>367</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>29</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_22</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>133</x>
+     <y>475</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>60</x>
+     <y>486</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_15</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>830</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_16</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>568</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>825</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_17</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>739</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>804</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_19</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>403</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>595</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_20</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>477</x>
+     <y>406</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>475</x>
+     <y>591</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_21</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>802</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_23</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>337</x>
+     <y>666</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_24</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>559</x>
+     <y>523</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>572</x>
+     <y>659</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_25</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>503</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>807</x>
+     <y>502</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_15</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>changeMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>movePuzzle()</slot>
-  <slot>slot2()</slot>
+  <slot>changeMode()</slot>
   <slot>shuffle()</slot>
   <slot>slot3()</slot>
  </slots>

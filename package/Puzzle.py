@@ -31,8 +31,9 @@ class NPuzzle:
             if self.isSolved(row_from_bottom, random_puzzle):
                 break
         self.__puzzle = random_puzzle
-        #temp_puzzle
+        #random_puzzle
         #[1,2,3,4,5,6,7,0,8]
+        #[1,2,3,4,5,6,7,8,9,10,11,12,13,14,0,15]
         return self.__puzzle
   
     def isSolved(self, row, random_puzzle) -> bool:
@@ -154,5 +155,28 @@ class NPuzzle:
     def getGoal(self) -> list[int]:
         """ Return self.goal """
         return self.__goal
+    
+    def getN(self) -> int:
+        return self.__N
+
     def getn(self) -> int:
         return self.__n
+
+    def setN(self, N):
+        self.__N = N
+
+    def setn(self, n):
+        self.__n = n
+    
+    def setGoal(self):
+        self.__goal = [ _ for _ in range(1, self.__N)] + [0]
+    
+    def setPuzzle(self):
+        self.__puzzle = self.__goal
+    
+    def updatePuzzle(self, N):
+        n = int(math.sqrt(N))
+        self.setN(N)
+        self.setn(n)
+        self.setGoal()
+        self.setPuzzle()
