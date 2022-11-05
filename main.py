@@ -1,13 +1,13 @@
 # This Python file uses the following encoding: utf-8
 import sys
 
-from Puzzle import NPuzzle
+from package.Puzzle import NPuzzle
 
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 from PyQt6.QtCore import *
 from PyQt6 import uic
-import ui.resource_rc as resource_rc
+import package.ui.resource_rc as resource_rc
 
 # Important:
 # You need to run the following command to generate the ui_form.py file
