@@ -100,7 +100,7 @@ border-radius : 5px;
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-image: url(/Users/parkjunha/Desktop/Project/N-Puzzle/image/black_dog.jpg);
+      <string notr="true">border-image: url(/Users/parkjunha/Desktop/Project/N-Puzzle/images/corgi.jpg);
 
 border-radius : 10px; 
 opacity : 0.2;
@@ -138,158 +138,259 @@ opacity : 0.2;
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color : rgba(0, 0, 0, 100);</string>
+      <string notr="true">background-color : rgba(255, 255, 255, 100);</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="2">
-       <widget class="QPushButton" name="puzzle_9">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="puzzle_8">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/blackdog/black_dog_2_1.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QPushButton" name="puzzle_7">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/blackdog/black_dog_2_0.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QPushButton" name="puzzle_6">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/blackdog/black_dog_1_2.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QPushButton" name="puzzle_5">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/blackdog/black_dog_1_1.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="puzzle_4">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/blackdog/black_dog_1_0.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2">
-       <widget class="QPushButton" name="puzzle_3">
-        <property name="minimumSize">
-         <size>
-          <width>220</width>
-          <height>160</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/blackdog/black_dog_0_2.jpg);
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
+      <item row="2" column="3">
        <widget class="QPushButton" name="puzzle_2">
         <property name="minimumSize">
          <size>
-          <width>220</width>
-          <height>160</height>
+          <width>163</width>
+          <height>118</height>
          </size>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/blackdog/black_dog_0_1.jpg);
-
-
-</string>
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_0_1.jpg);</string>
         </property>
         <property name="text">
          <string/>
         </property>
        </widget>
       </item>
-      <item row="0" column="0">
-       <widget class="QPushButton" name="puzzle_1">
+      <item row="3" column="4">
+       <widget class="QPushButton" name="puzzle_7">
         <property name="minimumSize">
          <size>
-          <width>220</width>
-          <height>160</height>
+          <width>163</width>
+          <height>118</height>
          </size>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/image/cropImg/blackdog/black_dog_0_0.jpg);
-
-</string>
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_1_2.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="puzzle_6">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_1_1.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QPushButton" name="puzzle_14">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_3_1.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QPushButton" name="puzzle_13">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_3_0.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QPushButton" name="puzzle_3">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_0_2.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="4">
+       <widget class="QPushButton" name="puzzle_15">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_3_2.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QPushButton" name="puzzle_11">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_2_2.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="puzzle_1">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_0_0.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QPushButton" name="puzzle_4">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_0_3.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="puzzle_5">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_1_0.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QPushButton" name="puzzle_8">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_1_3.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="puzzle_9">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_2_0.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="puzzle_10">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_2_1.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QPushButton" name="puzzle_12">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_2_3.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="5">
+       <widget class="QPushButton" name="puzzle_16">
+        <property name="minimumSize">
+         <size>
+          <width>163</width>
+          <height>118</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi16/corgi_3_3.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -381,150 +482,6 @@ border-radius: 40px;</string>
  <resources/>
  <connections>
   <connection>
-   <sender>puzzle_1</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>movePuzzle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>176</x>
-     <y>171</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>40</x>
-     <y>162</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>puzzle_2</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>movePuzzle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>436</x>
-     <y>150</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>431</x>
-     <y>40</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>puzzle_3</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>movePuzzle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>650</x>
-     <y>172</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>847</x>
-     <y>181</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>puzzle_6</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>movePuzzle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>652</x>
-     <y>317</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>850</x>
-     <y>322</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>puzzle_4</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>movePuzzle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>182</x>
-     <y>328</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>31</x>
-     <y>333</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>puzzle_7</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>movePuzzle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>181</x>
-     <y>486</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>30</x>
-     <y>486</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>puzzle_8</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>movePuzzle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>369</x>
-     <y>503</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>346</x>
-     <y>602</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>puzzle_5</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>movePuzzle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>432</x>
-     <y>355</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>434</x>
-     <y>593</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>puzzle_9</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>movePuzzle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>660</x>
-     <y>485</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>825</x>
-     <y>487</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>suffleButton</sender>
    <signal>pressed()</signal>
    <receiver>MainWindow</receiver>
@@ -537,6 +494,262 @@ border-radius: 40px;</string>
     <hint type="destinationlabel">
      <x>123</x>
      <y>712</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_1</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>40</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_2</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_3</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>482</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>488</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_4</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>617</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>634</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_5</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>35</x>
+     <y>240</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_6</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>291</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>29</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_7</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>562</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>829</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_8</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>725</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>807</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_9</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>352</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>37</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_10</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>28</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_11</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>541</x>
+     <y>337</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>347</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_12</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>697</x>
+     <y>403</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>410</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_13</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>492</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>45</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_14</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>523</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>328</x>
+     <y>603</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_15</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>515</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>468</x>
+     <y>605</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>puzzle_16</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>movePuzzle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>505</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>806</x>
+     <y>504</y>
     </hint>
    </hints>
   </connection>

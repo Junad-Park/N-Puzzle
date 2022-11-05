@@ -3,7 +3,7 @@ import os
 
 def imgcrop(input, save_path, xPieces, yPieces):
     filename, file_extension = os.path.splitext(input)
-    im = Image.open(input)
+    im = Image.open('images/'+ input)
     imgwidth, imgheight = im.size
     height = imgheight // yPieces
     width = imgwidth // xPieces
@@ -13,9 +13,10 @@ def imgcrop(input, save_path, xPieces, yPieces):
             a = im.crop(box)
             fname = filename + "_" + str(i) + "_" + str(j) + file_extension
             savename = save_path + fname
+            print(savename)
             try:
                 a.save(savename)
             except:
                 pass
 
-imgcrop("images/black_dog.jpg", 'images/cropImg/blackdog/' , 3, 3)
+imgcrop("corgi.jpg", 'images/cropImg/corgi16/', 4, 4)

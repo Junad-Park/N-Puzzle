@@ -20,18 +20,19 @@ class MainWindow(QMainWindow):
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        uic.loadUi("designer/form.ui", self)
+        uic.loadUi("designer/form2.ui", self)
         self.setWindowTitle("N-Puzzle")
         self.setFixedSize(880, 760)
 
-        self.nPzl= NPuzzle(9)
+        self.nPzl= NPuzzle(16)
         self.goal = self.nPzl.getGoal()
         self.puzzle = self.nPzl.getPuzzle()
 
         self.Btns = [
-            self.puzzle_1, self.puzzle_2, self.puzzle_3, 
-            self.puzzle_4, self.puzzle_5, self.puzzle_6, 
-            self.puzzle_7, self.puzzle_8, self.puzzle_9
+            self.puzzle_1, self.puzzle_2, self.puzzle_3, self.puzzle_4, 
+            self.puzzle_5, self.puzzle_6, self.puzzle_7, self.puzzle_8, 
+            self.puzzle_9, self.puzzle_10, self.puzzle_11, self.puzzle_12,
+            self.puzzle_13, self.puzzle_14, self.puzzle_15, self.puzzle_16,
             ]
 
         self.inital_styles = [item.styleSheet() for item in self.Btns]
@@ -122,6 +123,7 @@ class MainWindow(QMainWindow):
             None
         """
         self.puzzle = self.nPzl.getPuzzle()
+        self.nPzl.display()
 
     def shuffle(self) -> None:
         """ Shuffle the puzzle according to self.puzzle

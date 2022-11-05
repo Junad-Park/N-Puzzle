@@ -1,23 +1,29 @@
 <RCC>
     <qresource prefix="/images">
-        <file>cropImg/blackdog/black_dog_0_0.jpg</file>
-        <file>cropImg/blackdog/black_dog_0_1.jpg</file>
-        <file>cropImg/blackdog/black_dog_0_2.jpg</file>
-        <file>cropImg/blackdog/black_dog_1_0.jpg</file>
-        <file>cropImg/blackdog/black_dog_1_1.jpg</file>
-        <file>cropImg/blackdog/black_dog_1_2.jpg</file>
-        <file>cropImg/blackdog/black_dog_2_0.jpg</file>
-        <file>cropImg/blackdog/black_dog_2_1.jpg</file>
-        <file>cropImg/blackdog/black_dog_2_2.jpg</file>
-        <file>cropImg/corgi/corgi_0_0.jpg</file>
-        <file>cropImg/corgi/corgi_0_1.jpg</file>
-        <file>cropImg/corgi/corgi_0_2.jpg</file>
-        <file>cropImg/corgi/corgi_1_0.jpg</file>
-        <file>cropImg/corgi/corgi_1_1.jpg</file>
-        <file>cropImg/corgi/corgi_1_2.jpg</file>
-        <file>cropImg/corgi/corgi_2_0.jpg</file>
-        <file>cropImg/corgi/corgi_2_1.jpg</file>
-        <file>cropImg/corgi/corgi_2_2.jpg</file>
-
+        <file>images/cropImg/corgi/corgi_0_0.jpg</file>
+        <file>images/cropImg/corgi/corgi_0_1.jpg</file>
+        <file>images/cropImg/corgi/corgi_0_2.jpg</file>
+        <file>images/cropImg/corgi/corgi_1_0.jpg</file>
+        <file>images/cropImg/corgi/corgi_1_1.jpg</file>
+        <file>images/cropImg/corgi/corgi_1_2.jpg</file>
+        <file>images/cropImg/corgi/corgi_2_0.jpg</file>
+        <file>images/cropImg/corgi/corgi_2_1.jpg</file>
+        <file>images/cropImg/corgi/corgi_2_2.jpg</file>
+        <file>images/cropImg/corgi16/corgi_0_0.jpg</file>
+        <file>images/cropImg/corgi16/corgi_0_1.jpg</file>
+        <file>images/cropImg/corgi16/corgi_0_2.jpg</file>
+        <file>images/cropImg/corgi16/corgi_0_3.jpg</file>
+        <file>images/cropImg/corgi16/corgi_1_0.jpg</file>
+        <file>images/cropImg/corgi16/corgi_1_1.jpg</file>
+        <file>images/cropImg/corgi16/corgi_1_2.jpg</file>
+        <file>images/cropImg/corgi16/corgi_1_3.jpg</file>
+        <file>images/cropImg/corgi16/corgi_2_0.jpg</file>
+        <file>images/cropImg/corgi16/corgi_2_1.jpg</file>
+        <file>images/cropImg/corgi16/corgi_2_2.jpg</file>
+        <file>images/cropImg/corgi16/corgi_2_3.jpg</file>
+        <file>images/cropImg/corgi16/corgi_3_0.jpg</file>
+        <file>images/cropImg/corgi16/corgi_3_1.jpg</file>
+        <file>images/cropImg/corgi16/corgi_3_2.jpg</file>
+        <file>images/cropImg/corgi16/corgi_3_3.jpg</file>
     </qresource>
 </RCC>

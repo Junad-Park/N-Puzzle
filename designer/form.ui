@@ -152,7 +152,8 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_2_2.jpg);</string>
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_2_2.jpg);
+</string>
         </property>
         <property name="text">
          <string/>
@@ -171,7 +172,8 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_2_1.jpg);</string>
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_2_1.jpg);
+</string>
         </property>
         <property name="text">
          <string/>
@@ -190,7 +192,8 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_2_0.jpg);</string>
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_2_0.jpg);
+</string>
         </property>
         <property name="text">
          <string/>
@@ -209,7 +212,8 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_1_2.jpg);</string>
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_1_2.jpg);
+</string>
         </property>
         <property name="text">
          <string/>
@@ -228,7 +232,8 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_1_1.jpg);</string>
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_1_1.jpg);
+</string>
         </property>
         <property name="text">
          <string/>
@@ -247,7 +252,8 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_1_0.jpg);</string>
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_1_0.jpg);
+</string>
         </property>
         <property name="text">
          <string/>
@@ -266,7 +272,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_0_2.jpg);
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_0_2.jpg);
 </string>
         </property>
         <property name="text">
@@ -286,7 +292,8 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_0_1.jpg);</string>
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_0_1.jpg);
+</string>
         </property>
         <property name="text">
          <string/>
@@ -305,7 +312,7 @@ opacity : 0.2;
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/cropImg/corgi/corgi_0_0.jpg);
+         <string notr="true">border-image: url(:/images/images/cropImg/corgi/corgi_0_0.jpg);
 </string>
         </property>
         <property name="text">
