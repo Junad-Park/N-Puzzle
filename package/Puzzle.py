@@ -8,7 +8,7 @@ class NPuzzle:
         self.__n = int(math.sqrt(N))
         self.__goal = [ _ for _ in range(1, N)] + [0]
         self.__puzzle = self.__goal
-    
+
     def getRandomPuzzle(self) -> list[int]:
         """ Get random puzzle based on self.goal
         
@@ -49,7 +49,7 @@ class NPuzzle:
         if (self.__n%2 == 1):
             return self.getInversionCnt(random_puzzle) % 2 == 0
         else:
-            if (row % 2 == 0):
+            if (row%2 == 0):
                 return self.getInversionCnt(random_puzzle) % 2 == 1
             else:
                 return self.getInversionCnt(random_puzzle) % 2 == 0
@@ -65,7 +65,7 @@ class NPuzzle:
         """
         inversion_cnt = 0
         for i in range(len(random_puzzle)):
-            for j in range(i, len(random_puzzle)):
+            for j in range(i, len(random_puzzle)): 
                 if (random_puzzle[i]!=0 and 
                     random_puzzle[j] != 0 and 
                     random_puzzle[i] > random_puzzle[j]
