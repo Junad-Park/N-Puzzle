@@ -944,7 +944,7 @@ opacity : 0.2;
    <hints>
     <hint type="sourcelabel">
      <x>218</x>
-     <y>704</y>
+     <y>694</y>
     </hint>
     <hint type="destinationlabel">
      <x>94</x>
@@ -991,8 +991,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>327</x>
-     <y>132</y>
+     <x>262</x>
+     <y>156</y>
     </hint>
     <hint type="destinationlabel">
      <x>314</x>
@@ -1007,8 +1007,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>487</x>
-     <y>115</y>
+     <x>262</x>
+     <y>139</y>
     </hint>
     <hint type="destinationlabel">
      <x>469</x>
@@ -1023,8 +1023,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>650</x>
-     <y>127</y>
+     <x>262</x>
+     <y>151</y>
     </hint>
     <hint type="destinationlabel">
      <x>595</x>
@@ -1040,7 +1040,7 @@ opacity : 0.2;
    <hints>
     <hint type="sourcelabel">
      <x>165</x>
-     <y>249</y>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>46</x>
@@ -1056,7 +1056,7 @@ opacity : 0.2;
    <hints>
     <hint type="sourcelabel">
      <x>134</x>
-     <y>367</y>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>29</x>
@@ -1072,7 +1072,7 @@ opacity : 0.2;
    <hints>
     <hint type="sourcelabel">
      <x>133</x>
-     <y>475</y>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>60</x>
@@ -1087,8 +1087,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>412</x>
-     <y>246</y>
+     <x>262</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>830</x>
@@ -1103,8 +1103,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>568</x>
-     <y>279</y>
+     <x>262</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>825</x>
@@ -1119,8 +1119,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>739</x>
-     <y>313</y>
+     <x>262</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>804</x>
@@ -1135,8 +1135,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>300</x>
-     <y>403</y>
+     <x>262</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>278</x>
@@ -1151,8 +1151,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>477</x>
-     <y>406</y>
+     <x>262</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>475</x>
@@ -1167,8 +1167,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>699</x>
-     <y>370</y>
+     <x>262</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>802</x>
@@ -1183,8 +1183,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>344</x>
-     <y>511</y>
+     <x>262</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>337</x>
@@ -1199,8 +1199,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>559</x>
-     <y>523</y>
+     <x>262</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>572</x>
@@ -1215,8 +1215,8 @@ opacity : 0.2;
    <slot>movePuzzle()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>722</x>
-     <y>503</y>
+     <x>262</x>
+     <y>201</y>
     </hint>
     <hint type="destinationlabel">
      <x>807</x>
@@ -1240,11 +1240,28 @@ opacity : 0.2;
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>AiBtn</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ai()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>630</x>
+     <y>661</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>733</x>
+     <y>668</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>movePuzzle()</slot>
   <slot>changeMode()</slot>
   <slot>shuffle()</slot>
   <slot>slot3()</slot>
+  <slot>ai()</slot>
  </slots>
 </ui>

@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-def imgcrop(input, save_path, xPieces, yPieces):
+def imgCrop(input, save_path, xPieces, yPieces):
     filename, file_extension = os.path.splitext(input)
     im = Image.open('images/'+ input)
     imgwidth, imgheight = im.size
@@ -19,4 +19,4 @@ def imgcrop(input, save_path, xPieces, yPieces):
             except:
                 pass
 
-imgcrop("corgi.jpg", 'images/cropImg/corgi16/', 4, 4)
+imgCrop("corgi.jpg", 'images/cropImg/corgi16/', 4, 4)

@@ -1,5 +1,6 @@
 # This Python file uses the following encoding: utf-8
 import sys
+from queue import PriorityQueue
 
 from package.Puzzle import NPuzzle
 
@@ -25,10 +26,12 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setFixedSize(880, 760)
 
         self.stackedWidget:QStackedWidget
-
+        
         self.nPzl= NPuzzle(9)
         self.goal = self.nPzl.getGoal()
         self.puzzle = self.nPzl.getPuzzle()
+        self.mode = self.nPzl.getN()
+        self.running = False
 
         self.Btns = [self.__dict__[f"puzzle_{i+1}"] 
                     for i in range(self.nPzl.getN())] 
@@ -41,15 +44,10 @@ class MainWindow(QtWidgets.QMainWindow):
 
         
         self.styles = self._8_initial_styles
-    
         self.lastPeace = self.Btns[-1].styleSheet()
-        
-        self.mode = self.nPzl.getN()
-        self.running = False
 
     def movePuzzle(self) -> None:
         """ Move the a piece of a puzzle you received with the sender
-        
         Returns:
             None
         """
@@ -63,13 +61,12 @@ class MainWindow(QtWidgets.QMainWindow):
             if self.isClickMoved(target_num):
                 self.swapStyleSheet(target_num)
                 self.swapZero(target_num)
-            self.updatePuzzle()
+                self.updatePuzzle()
         
         if self.clear():
             self.Btns[-1].setStyleSheet(self.lastPeace)
             self.running = False
-
-    
+ 
     def isClickMoved(self, target_num) -> bool:
         """ Move the tile you received with the sender
         
@@ -115,23 +112,30 @@ class MainWindow(QtWidgets.QMainWindow):
 
         if distance == 1:
             if zero_idx > target_idx:
-                self.nPzl.moveLeft()
+                self.puzzle = self.nPzl.moveLeft()
             else:
-                self.nPzl.moveRight()
+                self.puzzle = self.nPzl.moveRight()
 
         elif distance == self.nPzl.getn():
             if zero_idx > target_idx:
-                self.nPzl.moveUp()
+                self.puzzle = self.nPzl.moveUp()
             else:
-                self.nPzl.moveDown()
+                self.puzzle = self.nPzl.moveDown()
 
-    def updatePuzzle(self) -> None:
-        """ Receive puzzle from self.nPzl and put it self.puzzle  
+    def updatePuzzle(self, other=None) -> None:
+        """ Receive goal, puzzle, mode from self.nPzl and put it 
         
         Returns:
             None
         """
-        self.puzzle = self.nPzl.getPuzzle()
+        if other==None:
+            self.goal = self.nPzl.getGoal()
+            self.mode = self.nPzl.getN()
+            self.puzzle = self.nPzl.getPuzzle()
+        else:
+            self.goal = other.getGoal()
+            self.mode = other.getN()
+            self.puzzle = other.getPuzzle()
 
     def shuffle(self) -> None:
         """ Shuffle the puzzle according to self.puzzle
@@ -142,8 +146,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.running = True
         self.puzzle = self.nPzl.createSolvablePuzzle()
 
-
-
         for i in range(len(self.Btns)):
             self.Btns[i].setStyleSheet(
                 self.styles[self.goal.index(self.puzzle[i])]
@@ -151,7 +153,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.Btns[self.puzzle.index(0)].setStyleSheet("")
         
-        
+            
     def clear(self) -> bool:
         """ Returns whether the game is cleared or not 
         
@@ -161,18 +163,12 @@ class MainWindow(QtWidgets.QMainWindow):
     
         return self.running == True and self.goal == self.puzzle
 
-    def changeMode(self):
-        target = self.sender()
-        
-        N = int(target.objectName().split('_')[1])+1
-        
-        self.nPzl.updatePuzzle(N)
-        self.goal = self.nPzl.getGoal()
-        self.mode = self.nPzl.getN()
-        self.puzzle = self.nPzl.getPuzzle()
+    def whatMode(self, N):
+        """ Select mode according to the value of 'N'
 
-        self.Btns = []
-
+        Args:
+            None
+        """
         if N == 9:
             self.stackedWidget.setCurrentWidget(self.page)
             self.styles = self._8_initial_styles
@@ -182,16 +178,79 @@ class MainWindow(QtWidgets.QMainWindow):
         elif N == 16:
             self.stackedWidget.setCurrentWidget(self.page_2)
             self.styles = self._15_initial_styles
-
             for i in range(self.mode):
                 self.Btns.append(self.__dict__[f"puzzle_{i+1+9}"])
+
+    def changeMode(self):
+        """ Change mode according to the value of 'N'
+
+        Args:
+            None
+        """
+        target = self.sender()
+        N = int(target.objectName().split('_')[1])+1
         
-            
+        self.nPzl.updatePuzzle(N)
+        self.updatePuzzle()
+        self.Btns = []
+
+        self.whatMode(N)
+        
         self.lastPeace = self.Btns[-1].styleSheet()
 
         for i in range(len(self.Btns)):
             self.Btns[i].setStyleSheet(self.styles[i])
         self.running = False
+
+    def solve(self, initial_board):
+        """
+            returns a list of moves from 'initial_board' to goal state
+                calculated using A* algorithm
+        """
+        queue = PriorityQueue()
+        queue.put(initial_board.to_pq_entry(0))
+
+        i = 1
+
+        while not queue.empty():
+            board = queue.get()[2]
+            if not board.is_goal():
+                for neighbour in board.neighbours():
+                    if neighbour != board.previous:
+                        queue.put(neighbour.to_pq_entry(i))
+                        i += 1
+                # board.display()
+                
+            else:
+                return board.get_previous_states()
+
+        return None
+    
+    def ai(self):        
+        moves = self.solve(self.nPzl)
+        for i in range(len(moves)):
+            self.updatePuzzle(moves[i])
+            self.ai_swapStyleSheet()
+            # moves[i].display()
+            # print(moves[i].get_f())
+            self.reset()
+
+        if self.clear():
+            self.Btns[-1].setStyleSheet(self.lastPeace)
+            self.running = False
+            
+            
+    def ai_swapStyleSheet(self):
+        for i in range(len(self.styles)):
+            self.Btns[i].setStyleSheet(
+                self.styles[self.goal.index(self.puzzle[i])]
+            )
+        self.Btns[self.puzzle.index(0)].setStyleSheet("")
+        
+    def reset(self):
+        loop = QEventLoop()
+        QTimer.singleShot(100, loop.quit)
+        loop.exec()
 
 
 if __name__ == "__main__":
