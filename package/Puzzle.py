@@ -325,6 +325,10 @@ class NPuzzle:
     def getPrevious(self):
         return self.previous
 
+    def getMoves(self):
+        return self.__moves
+    def setMoves(self):
+        self.__moves += 1
     def __eq__(self, other):
         """
             check if self == other
@@ -336,3 +340,4 @@ class NPuzzle:
     
     def __lt__(self, other):
         return self.get_f() < other.get_f()
+    

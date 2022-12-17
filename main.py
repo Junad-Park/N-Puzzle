@@ -62,6 +62,8 @@ class MainWindow(QtWidgets.QMainWindow):
                 self.swapStyleSheet(target_num)
                 self.swapZero(target_num)
                 self.updatePuzzle()
+                self.nPzl.setMoves()
+                self.label.setText(str(self.nPzl.getMoves()))
         
         if self.clear():
             self.Btns[-1].setStyleSheet(self.lastPeace)
@@ -152,6 +154,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 )
 
         self.Btns[self.puzzle.index(0)].setStyleSheet("")
+        self.label.setText("0")
         
             
     def clear(self) -> bool:
@@ -211,19 +214,18 @@ class MainWindow(QtWidgets.QMainWindow):
         queue.put(initial_board.to_pq_entry(0))
 
         i = 1
+        cnt = 1
 
         while not queue.empty():
             board = queue.get()[2]
+            cnt +=1
             if not board.is_goal():
                 for neighbour in board.neighbours():
                     if neighbour != board.previous:
                         queue.put(neighbour.to_pq_entry(i))
                         i += 1
-                # board.display()
-                
             else:
                 return board.get_previous_states()
-
         return None
     
     def ai(self):        
@@ -231,6 +233,7 @@ class MainWindow(QtWidgets.QMainWindow):
         for i in range(len(moves)):
             self.updatePuzzle(moves[i])
             self.ai_swapStyleSheet()
+            self.label.setText(str(moves[i].getMoves()))
             # moves[i].display()
             # print(moves[i].get_f())
             self.reset()
