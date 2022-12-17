@@ -4,7 +4,7 @@
 > 난이도 : 8, 15, ... N-Puzzle  
 > A\* Algorith을 사용. 자동으로 정답을 찾을 수 있음
 
-https://user-images.githubusercontent.com/67590577/206560665-b83b1359-b0ac-429c-bb82-c12ceefc602b.mov
+https://user-images.githubusercontent.com/67590577/208247369-30735e77-8655-43e1-9938-2459b1fee39b.mov
 
 |            8-Puzzle            |           15-Puzzle           |
 | :----------------------------: | :---------------------------: |
